@@ -1,5 +1,10 @@
 const arrowBtn = document.querySelector(".arrow-btn");
 const ipaChart = document.querySelector(".ipa-chart-container");
+const ipaItems = document.querySelectorAll(".ipa-item");
+
+ipaItems.forEach(item => {
+    item.addEventListener("click", () => {console.log(item)})
+});
 
 arrowBtn.addEventListener("click", () => {
     scrolldiv();
