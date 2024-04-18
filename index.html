@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -11,15 +11,24 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Ipa chart</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="hero-page">
+        <nav>
+            <h2>IPA CHART</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#chart">IPA Chart</a></li>
+                <li><a href="#explanation">Explanation</a></li>
+            </ul>
+        </nav>
+        <div class="hero-page" id="home">
             <h1>Improve your <span>pronunciation</span> with this IPA chart!</h1>
             <p>Click on any sound or word to hear the pronunciation.</p>
-            <button class="arrow-btn" >
+            <button class="arrow-btn">
                 <?xml version="1.0" ?><svg class="feather feather-arrow-down-circle" fill="none" height="24"
                     stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +38,7 @@
                 </svg>
             </button>
         </div>
-        <div class="ipa-chart-container">
+        <div class="ipa-chart-container" id="chart">
             <div class="vowels-chart-container">
                 <div class="chart-title">
                     <h2>Vowels</h2>
@@ -39,31 +48,31 @@
                         <h3>Monophthongs</h3>
                     </div>
                     <div class="monophthongs">
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
+                        <div class="ipa-item"><span class="letter">i:</span> <span class="word">sheep</span></div>
+                        <div class="ipa-item"><span class="letter">ɪ</span> <span class="word">ship</span></div>
+                        <div class="ipa-item"><span class="letter">ʊ</span> <span class="word">good</span></div>
+                        <div class="ipa-item"><span class="letter">u:</span> <span class="word">shoot</span></div>
+                        <div class="ipa-item"><span class="letter">e</span> <span class="word">bed</span></div>
+                        <div class="ipa-item"><span class="letter">ə</span> <span class="word">teacher</span></div>
+                        <div class="ipa-item"><span class="letter">ɛ:</span> <span class="word">bird</span></div>
+                        <div class="ipa-item"><span class="letter">ɔ:</span> <span class="word">door</span></div>
+                        <div class="ipa-item"><span class="letter">æ</span> <span class="word">cat</span></div>
+                        <div class="ipa-item"><span class="letter">ʌ</span> <span class="word">cup</span></div>
+                        <div class="ipa-item"><span class="letter">ɑ:</span> <span class="word">far</span></div>
+                        <div class="ipa-item"><span class="letter">ɒ</span> <span class="word">office</span></div>
                     </div>
                     <div class="vowels-title">
                         <h3>Diphthongs</h3>
                     </div>
                     <div class="diphthongs">
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
-                        <div class="ipa-item"></div>
+                        <div class="ipa-item"><span class="letter">aɪ</span> <span class="word">my</span></div>
+                        <div class="ipa-item"><span class="letter">aʊ</span> <span class="word">cow</span></div>
+                        <div class="ipa-item"><span class="letter">ɔɪ</span> <span class="word">boy</span></div>
+                        <div class="ipa-item"><span class="letter">eɪ</span> <span class="word">wait</span></div>
+                        <div class="ipa-item"><span class="letter">oʊ</span> <span class="word">show</span></div>
+                        <div class="ipa-item"><span class="letter">ɪə</span> <span class="word">here</span></div>
+                        <div class="ipa-item"><span class="letter">eə</span> <span class="word">hair</span></div>
+                        <div class="ipa-item"><span class="letter">ʊə</span> <span class="word">tourist</span></div>
                     </div>
                 </div>
             </div>
@@ -72,53 +81,50 @@
                     <h2>Consonants</h2>
                 </div>
                 <div class="consonants-chart">
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
-                    <div class="ipa-item cons-item"></div>
+                    <div class="ipa-item cons-item"><span class="letter"></audio>p</span> <span class="word">past</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">b</span> <span class="word">boat</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">t</span> <span class="word">tea</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">d</span> <span class="word">dog</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">t̠ʃ</span> <span class="word">cheese</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">d̠ʒ</span> <span class="word">june</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">k</span> <span class="word">car</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">g</span> <span class="word">go</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">f</span> <span class="word">fly</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">v</span> <span class="word">video</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">θ</span> <span class="word">think</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">ð</span> <span class="word">this</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">s</span> <span class="word">see</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">z</span> <span class="word">zoo</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">ʃ</span> <span class="word">shall</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">ʒ</span> <span class="word">television</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">m</span> <span class="word">man</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">n</span> <span class="word">now</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">ŋ</span> <span class="word">sing</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">h</span> <span class="word">hat</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">l</span> <span class="word">love</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">r</span> <span class="word">red</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">w</span> <span class="word">wet</span></div>
+                    <div class="ipa-item cons-item"><span class="letter">j</span> <span class="word">yes</span></div>
                 </div>
             </div>
         </div>
-        <div class="ipa-explanation">
-            <div class="explanation-title">
-                <h2>What is an IPA chart and how will it help my speech?</h2>
-            </div>
-            <p>The IPA chart, also known as the international phonetic alphabet chart, was formulated by the
+        <div class="ipa-explanation" id="explanation">
+            <h2>What is an IPA chart and how will it help my speech?</h2>
+            <p>The IPA chart, also known as the <span>international phonetic alphabet</span> chart, was formulated by the
                 international phonetic association in the 19th century. It was based on the Latin alphabet.
-            </p>
+            </p><br>
             <p>
-                It is popular with linguists and contains symbols. These symbols represent sounds in spoken English, not
+                It is popular with linguists and contains symbols. <span>These symbols represent sounds in spoken English</span>, not
                 other languages. The international phonetic alphabet chart is based on the received pronunciation
                 accent, which is widely regarded as the standard accent in the UK and abroad. This is central to know
                 when studying the language.
-            </p>
+            </p><br>
             <p>
-                In total, the international phonetic alphabet chart has 44 sounds which are known as phonemes. The
+                In total, the international phonetic alphabet chart <span>has 44 sounds which are known as phonemes</span>. The
                 phonemes are written as symbols and each helps with perfecting speech. As English has a lot more
                 pronunciation exceptions than other languages, it is central to know the chart as a spelling of a word
-                does not always tell us how we hear it
+                does not always tell us how we hear it.
             </p>
-
         </div>
     </div>
 

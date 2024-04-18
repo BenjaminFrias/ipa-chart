@@ -1,9 +1,10 @@
 /* GENERAL */
 
 :root {
-    --main-color: #E3E3D5;
+    --main-color: #e3e3d5;
     --carbon: #202020;
-    --lemon-green: #EFF422;
+    --dark-gray: #646464;
+    --lemon-green: #eff422;
     --border-radius-size: 10px;
 }
 
@@ -20,6 +21,58 @@
     font-style: normal;
 }
 
+/* NAV */
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    min-height: 50px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    background: var(--carbon);
+}
+
+@media (max-width: 750px) {
+    nav {
+        padding: 20px;
+        position: absolute;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+nav h2 {
+    color: var(--lemon-green);
+    font-style: italic;
+    font-weight: 900;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 600;
+    transition: all 200ms ease;
+}
+
+ul li a:hover {
+    color: var(--lemon-green);
+    font-weight: 600;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+
 /* HERO */
 
 .hero-page {
@@ -34,7 +87,7 @@
 
 .hero-page h1 {
     font-weight: 1000;
-    font-size: clamp(2rem, 1rem + 4vw , 6rem);
+    font-size: clamp(2rem, 1rem + 4vw, 6rem);
     max-inline-size: 80%;
     text-transform: uppercase;
     text-align: left;
@@ -82,7 +135,8 @@
     background: var(--main-color);
 }
 
-.vowels-chart-container, .cons-chart-container {
+.vowels-chart-container,
+.cons-chart-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,19 +146,21 @@
     background: #f7fc00;
     border: 1px solid var(--carbon);
     border-radius: var(--border-radius-size);
+    box-shadow: #151515 5px 4px;
 }
 
 .cons-chart-container {
     gap: 20px;
 }
 
-.vowels-chart, .consonants-chart {
+.vowels-chart,
+.consonants-chart {
     margin: auto 0;
 }
 
 .chart-title h2 {
     font-weight: 1000;
-    font-size: clamp(3rem, 1rem + 4vw , 4rem);
+    font-size: clamp(3rem, 1rem + 4vw, 4rem);
     color: #202020;
 }
 
@@ -114,19 +170,70 @@
     margin: 20px;
 }
 
-
-.vowels-chart, .consonants-chart, .vowels-chart .monophthongs, .vowels-chart .diphthongs {
+.vowels-chart,
+.consonants-chart,
+.vowels-chart .monophthongs,
+.vowels-chart .diphthongs {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 8px;
 }
 
+@media (max-width: 750px) {
+    .vowels-chart-container, .cons-chart-container {
+        padding: 20px 0px;
+    }
+}
+
 .ipa-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 5.3rem;
     height: 5.3rem;
+    font-size: 3em;
+    line-height: 1.1;
+    color: var(--main-color);
     background: #202020;
     border-radius: var(--border-radius-size);
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+@media (max-width: 750px) {
+    .container .ipa-item {
+        height: 6rem;
+    }
+}
+
+.ipa-item:hover {
+    transition: all 200ms ease;
+    background: #151515;
+    scale: 1.1;
+}
+
+.ipa-item span.letter {
+    color: var(--main-color);
+}
+
+.ipa-item span {
+    transition: all 200ms ease;
+}
+
+.ipa-item span.letter:hover {
+    scale: 1.1;
+    color: white;
+}
+
+.ipa-item span.word {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.ipa-item span.word:hover {
+    color: var(--main-color);
 }
 
 @media (max-width: 750px) {
@@ -135,13 +242,40 @@
     }
 }
 
-
 /* EXPLANATION */
 
 .ipa-explanation {
+    margin: 0 auto;
     width: 100%;
-    min-height: 97%;
+    min-height: 100%;
+    box-sizing: border-box;
+    padding: 5rem clamp(1rem, 1rem + 10vw, 15rem);
     background: var(--carbon);
-    color: white;
+    color: var(--main-color);
 }
 
+.ipa-explanation h2 {
+    font-weight: 700;
+    color: var(--lemon-green);
+    font-size: clamp(1rem, 2rem + 3vw, 6rem);
+    max-inline-size: 70%;
+    margin-bottom: 2rem;
+}
+
+.ipa-explanation p {
+    font-weight: 400;
+    font-size: clamp(1rem, .4rem + 1vw, 2rem);
+    max-inline-size: 66ch;
+}
+
+.ipa-explanation p span {
+    color: white;
+    font-weight: 800;
+    font-style: italic;
+}
+
+@media (max-width: 750px) {
+    .ipa-explanation h2 {
+        max-inline-size: 100%;
+    }
+}
