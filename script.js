@@ -1,20 +1,24 @@
 const arrowBtn = document.querySelector(".arrow-btn");
 const ipaChart = document.querySelector(".ipa-chart-container");
-const ipaItems = document.querySelectorAll(".ipa-item");
+const ipaLetters = document.querySelectorAll(".ipa-item span");
 
-ipaItems.forEach(item => {
-    item.addEventListener("click", () => {console.log(item)})
+ipaLetters.forEach((letter) => {
+    letter.addEventListener("click", () => {
+        const audioName = letter.dataset.audio;
+        var audio = new Audio(`assets/audio/${audioName}.mp3`);
+        audio.play();
+    });
 });
 
 arrowBtn.addEventListener("click", () => {
-    scrolldiv();
+    scrolldiv(ipaChart);
 });
 
-function scrolldiv() {
+function scrolldiv(div) {
     window.scroll({
-        top: findPosition(ipaChart),
+        top: findPosition(div) - 50,
         behavior: "smooth",
-      });
+    });
 }
 
 function findPosition(obj) {

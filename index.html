@@ -11,12 +11,13 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
     <title>Ipa chart</title>
 </head>
 
 <body>
     <div class="container">
+        <div class="circle"></div>
         <nav>
             <h2>IPA CHART</h2>
             <ul>
@@ -48,31 +49,28 @@
                         <h3>Monophthongs</h3>
                     </div>
                     <div class="monophthongs">
-                        <div class="ipa-item"><span class="letter">i:</span> <span class="word">sheep</span></div>
-                        <div class="ipa-item"><span class="letter">ɪ</span> <span class="word">ship</span></div>
-                        <div class="ipa-item"><span class="letter">ʊ</span> <span class="word">good</span></div>
-                        <div class="ipa-item"><span class="letter">u:</span> <span class="word">shoot</span></div>
-                        <div class="ipa-item"><span class="letter">e</span> <span class="word">bed</span></div>
-                        <div class="ipa-item"><span class="letter">ə</span> <span class="word">teacher</span></div>
-                        <div class="ipa-item"><span class="letter">ɛ:</span> <span class="word">bird</span></div>
-                        <div class="ipa-item"><span class="letter">ɔ:</span> <span class="word">door</span></div>
-                        <div class="ipa-item"><span class="letter">æ</span> <span class="word">cat</span></div>
-                        <div class="ipa-item"><span class="letter">ʌ</span> <span class="word">cup</span></div>
-                        <div class="ipa-item"><span class="letter">ɑ:</span> <span class="word">far</span></div>
-                        <div class="ipa-item"><span class="letter">ɒ</span> <span class="word">office</span></div>
+                        <div class="ipa-item"><span class="letter" data-audio="i">i:</span> <span class="word" data-audio="eager">eager</span></div>
+                        <div class="ipa-item"><span class="letter" data-audio="small_cap_i">ɪ</span> <span class="word" data-audio="lift">lift</span></div>
+                        <div class="ipa-item"><span class="letter" data-audio="horseshoe">ʊ</span> <span class="word" data-audio="rook">rook</span></div>
+                        <div class="ipa-item"><span class="letter" data-audio="u">u:</span> <span class="word" data-audio="rune">rune</span></div>
+                        <div class="ipa-item"><span class="letter" data-audio="e">e</span> <span class="word" data-audio="hey">hey</span></div>
+                        <div class="ipa-item"><span class="letter"  data-audio="mid_central">ə</span> <span class="word" data-audio="adjust">adjust</span></div>
+                        <div class="ipa-item"><span class="letter"  data-audio="epsilon">ɛ:</span> <span class="word" data-audio="edge">edge</span></div>
+                        <div class="ipa-item"><span class="letter"  data-audio="open_o">ɔ:</span> <span class="word" data-audio="taught">taught</span></div>
+                        <div class="ipa-item"><span class="letter"  data-audio="ash">æ</span> <span class="word" data-audio="apple">apple</span></div>
+                        <div class="ipa-item"><span class="letter"  data-audio="open_midback_a">ʌ</span> <span class="word" data-audio="upper">upper</span></div>
+                        <div class="ipa-item"><span class="letter"  data-audio="ah">ɑ:</span> <span class="word" data-audio="father">father</span></div>
+                        <div class="ipa-item"><span class="letter"  data-audio="open_back_rounded_a">ɒ</span> <span class="word" data-audio="sock">sock</span></div>
                     </div>
                     <div class="vowels-title">
                         <h3>Diphthongs</h3>
                     </div>
                     <div class="diphthongs">
-                        <div class="ipa-item"><span class="letter">aɪ</span> <span class="word">my</span></div>
-                        <div class="ipa-item"><span class="letter">aʊ</span> <span class="word">cow</span></div>
-                        <div class="ipa-item"><span class="letter">ɔɪ</span> <span class="word">boy</span></div>
-                        <div class="ipa-item"><span class="letter">eɪ</span> <span class="word">wait</span></div>
-                        <div class="ipa-item"><span class="letter">oʊ</span> <span class="word">show</span></div>
-                        <div class="ipa-item"><span class="letter">ɪə</span> <span class="word">here</span></div>
-                        <div class="ipa-item"><span class="letter">eə</span> <span class="word">hair</span></div>
-                        <div class="ipa-item"><span class="letter">ʊə</span> <span class="word">tourist</span></div>
+                        <div class="ipa-item"><span class="letter" data-audio="ai">aɪ</span> <span class="word" data-audio="bite">bite</span></div>
+                        <div class="ipa-item"><span class="letter" data-audio="ei">eɪ</span> <span class="word" data-audio="wait">wait</span></div>
+                        <div class="ipa-item"><span class="letter" data-audio="au">aʊ</span> <span class="word" data-audio="town">town</span></div>
+                        <div class="ipa-item"><span class="letter" data-audio="oi">ɔɪ</span> <span class="word" data-audio="boy">boy</span></div>
+                        <div class="ipa-item"><span class="letter" data-audio="ou">oʊ</span> <span class="word" data-audio="slow">slow</span></div>
                     </div>
                 </div>
             </div>
@@ -81,30 +79,30 @@
                     <h2>Consonants</h2>
                 </div>
                 <div class="consonants-chart">
-                    <div class="ipa-item cons-item"><span class="letter"></audio>p</span> <span class="word">past</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">b</span> <span class="word">boat</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">t</span> <span class="word">tea</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">d</span> <span class="word">dog</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">t̠ʃ</span> <span class="word">cheese</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">d̠ʒ</span> <span class="word">june</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">k</span> <span class="word">car</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">g</span> <span class="word">go</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">f</span> <span class="word">fly</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">v</span> <span class="word">video</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">θ</span> <span class="word">think</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">ð</span> <span class="word">this</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">s</span> <span class="word">see</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">z</span> <span class="word">zoo</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">ʃ</span> <span class="word">shall</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">ʒ</span> <span class="word">television</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">m</span> <span class="word">man</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">n</span> <span class="word">now</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">ŋ</span> <span class="word">sing</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">h</span> <span class="word">hat</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">l</span> <span class="word">love</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">r</span> <span class="word">red</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">w</span> <span class="word">wet</span></div>
-                    <div class="ipa-item cons-item"><span class="letter">j</span> <span class="word">yes</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="p">p</span> <span class="word" data-audio="pod">pod</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="b">b</span> <span class="word" data-audio="block">block</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="t">t</span> <span class="word" data-audio="tango">tango</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="d">d</span> <span class="word" data-audio="doubt">doubt</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="ts">t̠ʃ</span> <span class="word" data-audio="chip">chip</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="dz">d̠ʒ</span> <span class="word" data-audio="jeep">jeep</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="k">k</span> <span class="word" data-audio="echo">echo</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="g">g</span> <span class="word" data-audio="gold">gold</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="f">f</span> <span class="word" data-audio="fun">fun</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="v">v</span> <span class="word" data-audio="very">very</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="theta">θ</span> <span class="word" data-audio="throat">throat</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="eth">ð</span> <span class="word" data-audio="this">this</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="s">s</span> <span class="word" data-audio="samba">samba</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="z">z</span> <span class="word" data-audio="xerox">xerox</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="sh">ʃ</span> <span class="word" data-audio="ship">ship</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="zh">ʒ</span> <span class="word" data-audio="measure">measure</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="m">m</span> <span class="word" data-audio="mop">mop</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="n">n</span> <span class="word" data-audio="not">not</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="ng">ŋ</span> <span class="word" data-audio="sing">sing</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="h">h</span> <span class="word" data-audio="who">who</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="l">l</span> <span class="word" data-audio="limb">limb</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="r">r</span> <span class="word" data-audio="rodent">rodent</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="w">w</span> <span class="word" data-audio="went">went</span></div>
+                    <div class="ipa-item cons-item"><span class="letter" data-audio="j">j</span> <span class="word" data-audio="yes">yes</span></div>
                 </div>
             </div>
         </div>
